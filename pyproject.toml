@@ -15,7 +15,7 @@ dependencies = ['flask']
 dev = [
 	'tox',
 	'pre-commit',
-	'pip-tool',
+    'pip-tools',
 	'isort',
 	'black',
 	'flit',
