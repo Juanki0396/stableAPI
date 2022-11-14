@@ -1,0 +1,31 @@
+[build-system]
+requires = ['flit_core >=3.2,<4']
+build-backend = 'flit_core.buildapi'
+
+[project]
+name = 'stableAPI'
+authors = [{name = 'Juan Carlos Aranda Huecas', email = 'juanki0396@gmail.com'}]
+readme = 'README.md'
+license = {file = 'LICENSE'}
+classifiers = ['License :: OSI Approved :: MIT License']
+dynamic = ['version', 'description']
+dependencies = ['flask']
+
+[project.optional-dependencies]
+dev = [
+	'tox',
+	'pre-commit',
+	'pip-tool',
+	'isort',
+	'black',
+	'flit',
+]
+test = [
+	'pytest',
+	'flake8',
+	'flake8-docstrings',
+ 	'mypy',
+]
+
+[tool.isort]
+profile = 'black'
