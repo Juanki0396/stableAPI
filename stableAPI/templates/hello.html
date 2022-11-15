@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A simple app to run petitions on Stable Difussion v1.5 fine tuned models.">
+        <title>StableApp</title>
+        <link rel="shortcut icon" href="{{  url_for('static', filename='favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-sites">
+                <li class="navbar-element web-icon"><a href="#">Icon</a></li>
+                <li class="navbar-element"><a href="#">Models</a></li>
+                <li class="navbar-element"><a href="#">Creations</a></li>
+            </ul>
+            <span class="navbar-separator"></span>
+            <ul class="navbar-login">
+                <li class="navbar-element">Log In</li>
+                <li class="navbar-element">Sign Up</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>StableApp</h1>
+            <p>Hello {{ name }}</p>
+        </main>
+    </body>
+</html>

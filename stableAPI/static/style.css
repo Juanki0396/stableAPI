@@ -1,0 +1,59 @@
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: bisque;
+}
+
+.navbar {
+    background-color: #3EB4F0;
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar-sites, .navbar-login{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.navbar-sites {
+    flex-grow: 4;
+}
+
+.navbar-login {
+    flex-grow: 2;
+}
+
+.navbar-separator {
+    flex-grow: 2;
+}
+
+.navbar-element {
+    border: 1px black solid;
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main {
+    margin-top: 12vh;
+    width: 100%;
+    text-align: center;
+}
